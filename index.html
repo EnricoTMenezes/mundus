@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundus Publishing</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Work+Sans:wght@300;400;500&display=swap">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="logo-container">
+        <img src="img/logo-placeholder.png" alt="Mundus Publishing" id="logo" class="logo">
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" data-i18n="nav.home">Home</a></li>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#catalog" data-i18n="nav.catalog">Catalog</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="language-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="pt">PT</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+      </div>
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1 data-i18n="home.title">Mundus Publishing</h1>
+        <p class="hero-subtitle" data-i18n="home.subtitle">Where stories transcend languages</p>
+        <a href="#catalog" class="btn primary-btn" data-i18n="home.cta">Explore Our Books</a>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 data-i18n="about.title">About Mundus</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p data-i18n="about.paragraph1">Mundus publishes books, ebooks, and audiobooks, leveraging human-AI cooperation to bring literature to readers worldwide.</p>
+            <p data-i18n="about.paragraph2">We focus on translations to 10+ languages and have published over 1,000 public domain books, making classic literature accessible to everyone.</p>
+            <p data-i18n="about.paragraph3">Our mission is to break down language barriers and preserve literary heritage through innovative publishing methods.</p>
+          </div>
+          <div class="about-image">
+            <img src="https://images.pexels.com/photos/1370295/pexels-photo-1370295.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Books on shelves">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalog" class="catalog">
+      <div class="container">
+        <h2 data-i18n="catalog.title">Our Catalog</h2>
+        <p class="catalog-intro" data-i18n="catalog.intro">Discover our collection of books, available in multiple languages.</p>
+        <div class="book-grid" id="book-grid">
+          <!-- Books will be dynamically inserted here -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 data-i18n="contact.title">Contact Us</h2>
+        <p data-i18n="contact.description">We'd love to hear from you. Please fill out our contact form with any inquiries.</p>
+        <a href="#" id="contact-form-link" class="btn primary-btn" data-i18n="contact.button">Contact Form</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="img/logo-placeholder.png" alt="Mundus Publishing" class="logo small">
+          <p>&copy; <span id="year">2025</span> Mundus Publishing</p>
+        </div>
+        <div class="footer-links">
+          <h3 data-i18n="footer.navigation">Navigation</h3>
+          <ul>
+            <li><a href="#home" data-i18n="nav.home">Home</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#catalog" data-i18n="nav.catalog">Catalog</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3 data-i18n="footer.contact">Contact</h3>
+          <p>info@munduspublishing.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/books.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
